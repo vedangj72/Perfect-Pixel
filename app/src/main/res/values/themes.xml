@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PhotoWardrobe" parent="Theme.Material3.DayNight">
+         <item name="colorPrimary">@color/Button</item>
+         <item name="colorPrimaryVariant">@color/Card_background</item>
+         <item name="colorSecondary">@color/Fragment_background</item>
+
+    </style>
+
+    <style name="Theme.PhotoWardrobe" parent="Base.Theme.PhotoWardrobe" />
+</resources>

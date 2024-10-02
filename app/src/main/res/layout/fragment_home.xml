@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fragment_background"
+    tools:context=".UI.HomeFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+           <ImageView
+               android:id="@+id/natureTitleIcon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="32dp"
+               android:layout_marginTop="32dp"
+               android:src="@drawable/baseline_emoji_nature_24"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:id="@+id/natureImageTitle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               android:text="Nature Images"
+               android:textColor="@color/black"
+               android:textSize="24sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="@+id/natureTitleIcon"
+               app:layout_constraintStart_toEndOf="@+id/natureTitleIcon"
+               app:layout_constraintTop_toTopOf="@+id/natureTitleIcon" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/natureImageRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/natureImageTitle" />
+
+           <!-- Food Items Section -->
+           <ImageView
+               android:id="@+id/foodTitleIcon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="32dp"
+               android:layout_marginTop="8dp"
+               android:src="@drawable/baseline_fastfood_24"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/natureImageRecyclerView" />
+
+           <TextView
+               android:id="@+id/foodImageTitle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               android:layout_marginTop="15dp"
+               android:text="Food Items"
+               android:textColor="@color/black"
+               android:textSize="24sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="@+id/foodTitleIcon"
+               app:layout_constraintStart_toEndOf="@+id/foodTitleIcon"
+               app:layout_constraintTop_toTopOf="@+id/foodTitleIcon"
+               app:layout_constraintVertical_bias="1.0" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/foodImageRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/foodImageTitle" />
+
+           <!-- Beach Items Section -->
+           <ImageView
+               android:id="@+id/beachTitleIcon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="32dp"
+               android:layout_marginTop="8dp"
+               android:src="@drawable/baseline_beach_access_24"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/foodImageRecyclerView" />
+
+           <TextView
+               android:id="@+id/beachImageTitle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               android:text="Sea Items"
+               android:textColor="@color/black"
+               android:textSize="24sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="@+id/beachTitleIcon"
+               app:layout_constraintStart_toEndOf="@+id/beachTitleIcon"
+               app:layout_constraintTop_toTopOf="@+id/beachTitleIcon" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/beachImageRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/beachImageTitle" />
+
+           <!-- Star Items Section -->
+           <ImageView
+               android:id="@+id/starTitleIcon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="32dp"
+               android:layout_marginTop="8dp"
+               android:src="@drawable/baseline_star_24"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/beachImageRecyclerView" />
+
+           <TextView
+               android:id="@+id/starImageTitle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               android:text="Star Items"
+               android:textColor="@color/black"
+               android:textSize="24sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="@+id/starTitleIcon"
+               app:layout_constraintStart_toEndOf="@+id/starTitleIcon"
+               app:layout_constraintTop_toTopOf="@+id/starTitleIcon" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/starImageRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/starImageTitle" />
+
+           <!-- Car Items Section -->
+           <ImageView
+               android:id="@+id/carTitleIcon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="32dp"
+               android:layout_marginTop="8dp"
+               android:src="@drawable/baseline_directions_car_24"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/starImageRecyclerView" />
+
+           <TextView
+               android:id="@+id/carImageTitle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               android:text="Car Items"
+               android:textColor="@color/black"
+               android:textSize="24sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="@+id/carTitleIcon"
+               app:layout_constraintStart_toEndOf="@+id/carTitleIcon"
+               app:layout_constraintTop_toTopOf="@+id/carTitleIcon" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/carImageRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/carImageTitle" />
+
+           <!-- Bike Items Section -->
+           <ImageView
+               android:id="@+id/bikeTitleIcon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="32dp"
+               android:layout_marginTop="8dp"
+               android:src="@drawable/baseline_directions_bike_24"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/carImageRecyclerView" />
+
+           <TextView
+               android:id="@+id/bikeImageTitle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               android:text="Bike Items"
+               android:textColor="@color/black"
+               android:textSize="24sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="@+id/bikeTitleIcon"
+               app:layout_constraintStart_toEndOf="@+id/bikeTitleIcon"
+               app:layout_constraintTop_toTopOf="@+id/bikeTitleIcon" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/bikeImageRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/bikeImageTitle"
+               app:layout_constraintBottom_toBottomOf="parent" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_search_24"
+        app:backgroundTint="@color/Button" />
+
+</FrameLayout>
